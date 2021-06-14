@@ -2,12 +2,14 @@
 REST API federation by Akamai EdgeWoker Graphql Service
 
 
-## REST API
-3 REST API to federate and turn into Graphql Service
+### REST API
+3 REST API to federate and turn into Graphql Service <br>
+
 Books : https://ewdemo.test.edgekey.net/mockapi/books <br>
 Authors : https://ewdemo.test.edgekey.net/mockapi/authors <br>
 Publishers : https://ewdemo.test.edgekey.net/mockapi/publishers <br>
 
+Database : https://ewdemo.test.edgekey.net/mockapi/db
 Sorce Code : https://github.com/takashito/mockapi
 
 
