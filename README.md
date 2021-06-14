@@ -2,18 +2,18 @@
 REST API federation by Akamai EdgeWoker Graphql Service
 
 
-### REST API
+## REST API
 3 REST API to federate and turn into Graphql Service <br>
 
 Books : https://ewdemo.test.edgekey.net/mockapi/books <br>
 Authors : https://ewdemo.test.edgekey.net/mockapi/authors <br>
 Publishers : https://ewdemo.test.edgekey.net/mockapi/publishers <br>
 
-Database : https://ewdemo.test.edgekey.net/mockapi/db
-Sorce Code : https://github.com/takashito/mockapi
+Database : https://ewdemo.test.edgekey.net/mockapi/db <br>
+Sorce Code : https://github.com/takashito/mockapi <br>
 
 
-## Schema
+## Graphql Schema
 ```
   type Author {
     id: ID!
@@ -69,13 +69,14 @@ https://ewdemo.test.edgekey.net/federation/graphql?query={authors{name,books{nam
 https://ewdemo.test.edgekey.net/federation/graphql?query={books{name,debug{url,cacheHit},authors{name,debug{url,cacheHit,cacheKey}},publisher{name,debug{url,cacheHit}}}}
 <br>
 
-url: REST API call to fetch information
-cacheable: REST API is cacheable or not
-cacheKey: Akamai CacheKey
-cacheHit: 
-  - EDGE-HIT : REST API was responded from Edge cache
-  - REMOTE-HIT : REST API was responded from parent cache
-  - CACHE-MISS : REST API was responded from mock api server (origin)
+### Debug Info
++ url: REST API call to fetch information
++ cacheable: REST API is cacheable or not
++ cacheKey: Akamai CacheKey
++ cacheHit: 
+  - EDGE_HIT : REST API was responded from Edge cache
+  - REMOTE_HIT : REST API was responded from parent cache
+  - CACHE_MISS : REST API was responded from mock api server (origin)
 
 ## Known EW Issue
 
