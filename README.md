@@ -74,8 +74,10 @@ https://ewdemo.test.edgekey.net/federation/graphql?query={books{name,debug{url,c
 + cacheable: REST API is cacheable or not
 + cacheKey: Akamai CacheKey
 + cacheHit: 
-  - EDGE_HIT : REST API was responded from Edge cache
-  - REMOTE_HIT : REST API was responded from parent cache
+  - EDGE_MEM_HIT : REST API was responded from Edge memory cache
+  - EDGE_HIT : REST API was responded from Edge disk cache
+  - REMOTE_MEM_HIT : REST API was responded from parent memory cache
+  - REMOTE_HIT : REST API was responded from parent disk cache
   - CACHE_MISS : REST API was responded from mock api server (origin)
 
 ## Known EW Issue
