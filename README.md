@@ -3,7 +3,7 @@ REST API federation by Akamai EdgeWoker Graphql Service
 
 
 ## REST API
-3 REST API to federate and turn into Graphql Service <br>
+3 REST API to federate and turn into Single Graphql Service <br>
 
 Books : https://ewdemo.test.edgekey.net/mockapi/books <br>
 Authors : https://ewdemo.test.edgekey.net/mockapi/authors <br>
