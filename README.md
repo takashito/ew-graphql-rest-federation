@@ -1,10 +1,11 @@
 # ew-graphql-rest-federation
 REST API federation by Akamai EdgeWoker Graphql Service
 
-[[https://raw.githubusercontent.com/takashito/ew-graphql-rest-federation/main/ew-graphql-rest-federation.png|alt=octocat]]
+<img width="732" alt="ew-graphql-rest-federation" src="https://user-images.githubusercontent.com/2292155/121985480-c4e1f880-cdcf-11eb-82f8-30f731308a3d.png">
 
 ## REST API
 3 REST API to federate and turn into Single Graphql Service <br>
+I have used mockapi servece "My JSON Server" from [typecode](https://my-json-server.typicode.com/)
 
 Books : https://ewdemo.test.edgekey.net/mockapi/books <br>
 Authors : https://ewdemo.test.edgekey.net/mockapi/authors <br>
@@ -14,7 +15,7 @@ Database : https://ewdemo.test.edgekey.net/mockapi/db <br>
 Sorce Code : https://github.com/takashito/mockapi <br>
 
 
-## Graphql Schema
+## Federated Graphql Schema
 ```
   type Author {
     id: ID!
@@ -56,6 +57,10 @@ Sorce Code : https://github.com/takashito/mockapi <br>
     publisher(id: ID!): Publisher!
   }
 ```
+
+Now you can access your data with single graphql endpoint.
+Routing to rest api to fullfill query will be done by graqhpl engine.
+<br>
 
 ## Example URLs without Debug info
 https://ewdemo.test.edgekey.net/federation/graphql?query={publishers{name,books{name}}}<br>
