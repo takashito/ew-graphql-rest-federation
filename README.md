@@ -1,7 +1,7 @@
 # ew-graphql-rest-federation
 REST API federation by Akamai EdgeWoker Graphql Service
 
-[[https://raw.githubusercontent.com/takashito/ew-graphql-rest-federation/main/ew-graphql-rest-federation.png=rest api federation by EdgeWorker graphql server]]
+[[https://raw.githubusercontent.com/takashito/ew-graphql-rest-federation/main/ew-graphql-rest-federation.png|alt=rest api federation by EdgeWorker graphql server]]
 
 ## REST API
 3 REST API to federate and turn into Single Graphql Service <br>
