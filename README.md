@@ -63,17 +63,20 @@ Routing to rest api to fullfill query will be done by graqhpl engine.
 <br>
 
 ## Example URLs without Debug info
-https://ewdemo.test.edgekey.net/federation/graphql?query={publishers{name,books{name}}}<br>
-https://ewdemo.test.edgekey.net/federation/graphql?query={authors{name,books{name}}}<br>
+```
+https://ewdemo.test.edgekey.net/federation/graphql?query={book(id:3){name,authors{name},publisher{name}}}
+https://ewdemo.test.edgekey.net/federation/graphql?query={publishers{name,books{name}}}
+https://ewdemo.test.edgekey.net/federation/graphql?query={authors{name,books{name}}}
 https://ewdemo.test.edgekey.net/federation/graphql?query={books{name,authors{name},publisher{name}}}
-<br>
-
+```
 
 ## Example URLs with Debug info
+```
+https://ewdemo.test.edgekey.net/federation/graphql?query={book(id:3){name,,debug{url,cacheHit,cacheKey},authors{name,debug{url,cacheHit,cacheKey}},publisher{name,debug{url,cacheHit,cacheKey}}}}
 https://ewdemo.test.edgekey.net/federation/graphql?query={publishers{name,books{name},debug{url,cacheKey,cacheHit}}}<br>
 https://ewdemo.test.edgekey.net/federation/graphql?query={authors{name,books{name,debug{url,cacheKey,cacheHit}}}}<br>
 https://ewdemo.test.edgekey.net/federation/graphql?query={books{name,debug{url,cacheHit},authors{name,debug{url,cacheHit,cacheKey}},publisher{name,debug{url,cacheHit}}}}
-<br>
+```
 
 ### Debug Info
 + url: REST API called by graphql engine
