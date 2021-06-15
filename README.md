@@ -76,7 +76,7 @@ https://ewdemo.test.edgekey.net/federation/graphql?query={books{name,debug{url,c
 <br>
 
 ### Debug Info
-+ url: REST API call to fetch information
++ url: REST API called by graphql engine
 + cacheable: REST API is cacheable or not
 + cacheKey: Akamai CacheKey
 + cacheHit: 
