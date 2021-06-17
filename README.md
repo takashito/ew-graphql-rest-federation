@@ -62,6 +62,8 @@ Now you can access your data with single graphql endpoint.
 Routing to rest api to fullfill query will be done by graqhpl engine.
 <br>
 
+when you hit these example URLs, you may see error due to EdgeWorker initialization timeout, but after hitting URL 2,3 times, it should work. <br>
+
 ## Example URLs without Debug info
 ```
 https://ewdemo.test.edgekey.net/federation/graphql?query={book(id:3){name,authors{name},publisher{name}}}
